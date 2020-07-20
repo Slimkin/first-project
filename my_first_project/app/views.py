@@ -28,6 +28,4 @@ def time_view(request):
 
 def workdir_view(request):
     workdir_data = os.listdir(path='.')
-    for f in workdir_data:
-        
-return HttpResponse(workdir_data)
+    return HttpResponse(workdir_data)
